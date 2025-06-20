@@ -110,4 +110,28 @@ document.addEventListener('DOMContentLoaded', function() {
         return isValid;
     }
         
+     function showError(field, message) {
+        const errorId = field.name + 'Error';
+        const errorElement = document.getElementById(errorId);
+        
+        if (errorElement) {
+            errorElement.textContent = message;
+            errorElement.style.display = 'block';
+        }
+        
+        field.style.borderColor = '#e74c3c';
+    }
+    
+    function clearError(field) {
+        const errorId = field.name + 'Error';
+        const errorElement = document.getElementById(errorId);
+        
+        if (errorElement) {
+            errorElement.textContent = '';
+            errorElement.style.display = 'none';
+        }
+        
+        field.style.borderColor = '#ddd';
+    }
+    
     
