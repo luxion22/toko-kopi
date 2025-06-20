@@ -133,5 +133,59 @@ document.addEventListener('DOMContentLoaded', function() {
         
         field.style.borderColor = '#ddd';
     }
+
+      // Animation for form fields
+    inputs.forEach(input => {
+        input.addEventListener('focus', function() {
+            this.style.transform = 'scale(1.02)';
+            this.style.boxShadow = '0 0 10px rgba(210, 105, 30, 0.2)';
+        });
+        
+        input.addEventListener('blur', function() {
+            this.style.transform = 'scale(1)';
+            this.style.boxShadow = 'none';
+        });
+    });
+});
+
+function showSuccessModal() {
+    const modal = document.getElementById('successModal');
+    modal.style.display = 'block';
+    
+    // Prevent body scroll
+    document.body.style.overflow = 'hidden';
+    
+    // Add animation
+    modal.style.opacity = '0';
+    setTimeout(() => {
+        modal.style.opacity = '1';
+    }, 10);
+}
+
+function closeSuccessModal() {
+    const modal = document.getElementById('successModal');
+    
+    // Add fade out animation
+    modal.style.opacity = '0';
+    setTimeout(() => {
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+    }, 300);
+}
+
+// Close modal when clicking outside
+document.addEventListener('click', function(event) {
+    const modal = document.getElementById('successModal');
+    if (event.target === modal) {
+        closeSuccessModal();
+    }
+});
+
+// Close modal with Escape key
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+        closeSuccessModal();
+    }
+});
     
     
