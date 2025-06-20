@@ -54,5 +54,60 @@ document.addEventListener('DOMContentLoaded', function() {
         const fieldName = field.name;
         let isValid = true;
         let errorMessage = '';
+
+                // Clear previous errors
+        clearError(field);
+        
+        // Required field validation
+        if (field.hasAttribute('required') && !value) {
+            errorMessage = 'Field ini wajib diisi';
+            isValid = false;
+        }
+        
+        // Specific field validations
+        switch (fieldName) {
+            case 'name':
+                if (value && value.length < 2) {
+                    errorMessage = 'Nama minimal 2 karakter';
+                    isValid = false;
+                }
+                break;
+                
+            case 'phone':
+                const phonePattern = /^[\+]?[0-9\-\s\(\)]{10,}$/;
+                if (value && !phonePattern.test(value)) {
+                    errorMessage = 'Format nomor telepon tidak valid';
+                    isValid = false;
+                }
+                break;
+                
+            case 'email':
+                const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (value && !emailPattern.test(value)) {
+                    errorMessage = 'Format email tidak valid';
+                    isValid = false;
+                }
+                break;
+                
+            case 'date':
+                if (value) {
+                    const selectedDate = new Date(value);
+                    const today = new Date();
+                    today.setHours(0, 0, 0, 0);
+                    
+                    if (selectedDate < today) {
+                        errorMessage = 'Tanggal tidak boleh di masa lalu';
+                        isValid = false;
+                    }
+                }
+                break;
+        }
+        
+        if (!isValid) {
+            showError(field, errorMessage);
+        }
+        
+        return isValid;
+    }
         
     
