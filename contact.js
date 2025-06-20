@@ -3,3 +3,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('reservationForm');
     const inputs = form.querySelectorAll('input, select, textarea');
     
+ // Set minimum date to today
+ const dateInput = document.getElementById('date');
+ const today = new Date().toISOString().split('T')[0];
+ dateInput.min = today;
+    
