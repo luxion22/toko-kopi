@@ -18,4 +18,19 @@ document.addEventListener('DOMContentLoaded', function() {
             clearError(this);
         });
     });
+
+ // Form submission
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        let isValid = true;
+        const requiredFields = form.querySelectorAll('[required]');
+        
+        // Validate all required fields
+        requiredFields.forEach(field => {
+            if (!validateField(field)) {
+                isValid = false;
+            }
+        });
+        
     
