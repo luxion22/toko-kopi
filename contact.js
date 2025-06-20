@@ -7,4 +7,15 @@ document.addEventListener('DOMContentLoaded', function() {
  const dateInput = document.getElementById('date');
  const today = new Date().toISOString().split('T')[0];
  dateInput.min = today;
+
+ // Real-time validation
+    inputs.forEach(input => {
+        input.addEventListener('blur', function() {
+            validateField(this);
+        });
+        
+        input.addEventListener('input', function() {
+            clearError(this);
+        });
+    });
     
