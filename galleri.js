@@ -17,3 +17,14 @@ function openModal(imageSrc, caption) {
         modal.style.opacity = '1';
     }, 10);
 }
+
+function closeModal() {
+    const modal = document.getElementById('imageModal');
+    
+    // Add fade out animation
+    modal.style.opacity = '0';
+    setTimeout(() => {
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+    }, 300);
+}
