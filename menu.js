@@ -36,7 +36,6 @@ document.addEventListener('DOMContentLoaded', function() {
                         }, 300);
                     }
                 }
-                });
             });
         });
     });
@@ -45,3 +44,17 @@ document.addEventListener('DOMContentLoaded', function() {
     menuItems.forEach(item => {
         item.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
     });
+
+    // Enhanced hover effects for menu items
+    menuItems.forEach(item => {
+        const overlay = item.querySelector('.menu-overlay');
+        
+        item.addEventListener('mouseenter', function() {
+            this.style.transform = 'translateY(-8px) scale(1.02)';
+        });
+        
+        item.addEventListener('mouseleave', function() {
+            this.style.transform = 'translateY(0) scale(1)';
+        });
+    });
+});
