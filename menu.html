@@ -34,5 +34,190 @@
                 <p>Pilihan terbaik makanan dan minuman untuk menemani hari Anda</p>
             </div>
         </section>
+
+        <section class="menu-section">
+            <div class="container">
+                <!-- Filter Buttons -->
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">Semua</button>
+                    <button class="filter-btn" data-filter="minuman">Minuman</button>
+                    <button class="filter-btn" data-filter="makanan">Makanan</button>
+                    <button class="filter-btn" data-filter="dessert">Dessert</button>
+                </div>
+
+                <!-- Menu Grid -->
+                <div class="menu-grid" id="menu-grid">
+                    <!-- Minuman -->
+                    <div class="menu-item" data-category="minuman">
+                        <img src="https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Espresso">
+                        <div class="menu-content">
+                            <h3>Espresso</h3>
+                            <p class="menu-desc">Single shot espresso dengan crema sempurna</p>
+                            <span class="price">Rp 25.000</span>
+                        </div>
+                        <div class="menu-overlay">
+                            <p>Espresso berkualitas tinggi dari biji kopi pilihan dengan roasting yang perfect. Memberikan rasa yang kuat dan aroma yang menggoda.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="minuman">
+                        <img src="https://images.pexels.com/photos/585753/pexels-photo-585753.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Cappuccino Art">
+                        <div class="menu-content">
+                            <h3>Cappuccino Art</h3>
+                            <p class="menu-desc">Espresso dengan steamed milk dan foam art</p>
+                            <span class="price">Rp 35.000</span>
+                        </div>
+                        <div class="menu-overlay">
+                            <p>Perpaduan sempurna antara espresso, steamed milk, dan milk foam dengan latte art yang cantik. Rasa yang creamy dan balanced.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="minuman">
+                        <img src="https://images.pexels.com/photos/894695/pexels-photo-894695.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Latte">
+                        <div class="menu-content">
+                            <h3>Caffe Latte</h3>
+                            <p class="menu-desc">Espresso dengan steamed milk yang creamy</p>
+                            <span class="price">Rp 38.000</span>
+                        </div>
+                        <div class="menu-overlay">
+                            <p>Kombinasi espresso dengan lebih banyak steamed milk, menghasilkan rasa yang mild dan creamy. Perfect untuk pemula pecinta kopi.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="minuman">
+                        <img src="https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Americano">
+                        <div class="menu-content">
+                            <h3>Americano</h3>
+                            <p class="menu-desc">Espresso dengan hot water yang refreshing</p>
+                            <span class="price">Rp 30.000</span>
+                        </div>
+                        <div class="menu-overlay">
+                            <p>Espresso yang diencerkan dengan hot water, memberikan rasa kopi yang kuat namun tidak terlalu pekat. Ideal untuk long coffee break.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="minuman">
+                        <img src="https://images.pexels.com/photos/1120575/pexels-photo-1120575.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Cold Brew">
+                        <div class="menu-content">
+                            <h3>Cold Brew</h3>
+                            <p class="menu-desc">Kopi dingin dengan brewing 12 jam</p>
+                            <span class="price">Rp 40.000</span>
+                        </div>
+                        <div class="menu-overlay">
+                            <p>Kopi yang diseduh dingin selama 12 jam menghasilkan rasa yang smooth, less acidic, dan naturally sweet. Perfect untuk cuaca panas.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="minuman">
+                        <img src="https://images.pexels.com/photos/851555/pexels-photo-851555.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Iced Latte">
+                        <div class="menu-content">
+                            <h3>Iced Latte</h3>
+                            <p class="menu-desc">Latte dingin yang menyegarkan</p>
+                            <span class="price">Rp 40.000</span>
+                        </div>
+                        <div class="menu-overlay">
+                            <p>Versi dingin dari caffe latte dengan es yang menyegarkan. Tetap mempertahankan rasa creamy dan balanced yang nikmat.</p>
+                        </div>
+                    </div>
+
+                    <!-- Makanan -->
+                    <div class="menu-item" data-category="makanan">
+                        <img src="https://images.pexels.com/photos/1833769/pexels-photo-1833769.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Croissant">
+                        <div class="menu-content">
+                            <h3>Croissant Butter</h3>
+                            <p class="menu-desc">Croissant fresh dengan butter premium</p>
+                            <span class="price">Rp 20.000</span>
+                        </div>
+                        <div class="menu-overlay">
+                            <p>Croissant yang dibuat fresh setiap hari dengan butter premium berkualitas tinggi. Tekstur yang flaky dan rasa buttery yang rich.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="makanan">
+                        <img src="https://images.pexels.com/photos/461431/pexels-photo-461431.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Sandwich">
+                        <div class="menu-content">
+                            <h3>Club Sandwich</h3>
+                            <p class="menu-desc">Sandwich dengan chicken, bacon, dan sayuran</p>
+                            <span class="price">Rp 45.000</span>
+                        </div>
+                        <div class="menu-overlay">
+                            <p>Triple layer sandwich dengan grilled chicken, crispy bacon, fresh lettuce, tomato, dan mayo. Served dengan french fries.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="makanan">
+                        <img src="https://images.pexels.com/photos/1633525/pexels-photo-1633525.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Bagel">
+                        <div class="menu-content">
+                            <h3>Salmon Bagel</h3>
+                            <p class="menu-desc">Bagel dengan smoked salmon dan cream cheese</p>
+                            <span class="price">Rp 55.000</span>
+                        </div>
+                        <div class="menu-overlay">
+                            <p>Fresh bagel dengan smoked salmon berkualitas, cream cheese, capers, red onion, dan fresh dill. Perfect untuk breakfast atau lunch.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="makanan">
+                        <img src="https://images.pexels.com/photos/1099680/pexels-photo-1099680.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Pasta">
+                        <div class="menu-content">
+                            <h3>Aglio Olio</h3>
+                            <p class="menu-desc">Pasta dengan garlic, olive oil, dan herbs</p>
+                            <span class="price">Rp 42.000</span>
+                        </div>
+                        <div class="menu-overlay">
+                            <p>Pasta klasik Italia dengan garlic, extra virgin olive oil, chili flakes, dan fresh herbs. Simple namun penuh flavor.</p>
+                        </div>
+                    </div>
+
+                    <!-- Dessert -->
+                    <div class="menu-item" data-category="dessert">
+                        <img src="https://images.pexels.com/photos/291528/pexels-photo-291528.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Cheesecake">
+                        <div class="menu-content">
+                            <h3>New York Cheesecake</h3>
+                            <p class="menu-desc">Cheesecake klasik dengan berry sauce</p>
+                            <span class="price">Rp 35.000</span>
+                        </div>
+                        <div class="menu-overlay">
+                            <p>Cheesecake dengan tekstur yang creamy dan rich, disajikan dengan fresh berry sauce dan whipped cream.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="dessert">
+                        <img src="https://images.pexels.com/photos/1126359/pexels-photo-1126359.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Brownie">
+                        <div class="menu-content">
+                            <h3>Chocolate Brownie</h3>
+                            <p class="menu-desc">Brownie dengan vanilla ice cream</p>
+                            <span class="price">Rp 30.000</span>
+                        </div>
+                        <div class="menu-overlay">
+                            <p>Warm chocolate brownie yang fudgy disajikan dengan vanilla ice cream dan chocolate sauce. Perfect comfort dessert.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="dessert">
+                        <img src="https://images.pexels.com/photos/1098592/pexels-photo-1098592.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Tiramisu">
+                        <div class="menu-content">
+                            <h3>Tiramisu</h3>
+                            <p class="menu-desc">Dessert Italia dengan coffee dan mascarpone</p>
+                            <span class="price">Rp 38.000</span>
+                        </div>
+                        <div class="menu-overlay">
+                            <p>Dessert Italia klasik dengan ladyfinger yang direndam espresso, mascarpone cream, dan cocoa powder. Creamy dan rich flavor.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-category="dessert">
+                        <img src="https://images.pexels.com/photos/1055272/pexels-photo-1055272.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Pancake">
+                        <div class="menu-content">
+                            <h3>Fluffy Pancake</h3>
+                            <p class="menu-desc">Pancake dengan maple syrup dan butter</p>
+                            <span class="price">Rp 32.000</span>
+                        </div>
+                        <div class="menu-overlay">
+                            <p>Stack of fluffy pancakes disajikan dengan maple syrup, butter, dan fresh berries. Perfect untuk breakfast atau afternoon treat.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </main>
 </body>
