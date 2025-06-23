@@ -39,12 +39,12 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     });
-
+    
     // Add transition styles to menu items
     menuItems.forEach(item => {
         item.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
     });
-
+    
     // Enhanced hover effects for menu items
     menuItems.forEach(item => {
         const overlay = item.querySelector('.menu-overlay');
