@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promo & Event - Brew & Beans Coffee Shop</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <h1>Brew & Beans</h1>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="menu.html" class="nav-link">Menu</a></li>
+                <li><a href="gallery.html" class="nav-link">Galeri</a></li>
+                <li><a href="promo.html" class="nav-link active">Promo & Event</a></li>
+                <li><a href="contact.html" class="nav-link">Kontak</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Promo & Event</h1>
+                <p>Jangan lewatkan penawaran spesial dan event menarik di Brew & Beans</p>
+            </div>
+        </section>
+
+        <section class="promo-section">
+            <div class="container">
+                <div class="promo-grid">
+                    <!-- Promo 1 -->
+                    <div class="promo-card">
+                        <div class="promo-header">
+                            <img src="https://images.pexels.com/photos/585753/pexels-photo-585753.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Happy Hour Cappuccino">
+                            <div class="promo-badge">HOT DEAL</div>
+                        </div>
+                        <div class="promo-content">
+                            <h3>Happy Hour Cappuccino</h3>
+                            <p class="promo-summary">Diskon 30% untuk semua cappuccino dan latte art</p>
+                            <div class="promo-time">Senin - Jumat, 14:00 - 17:00</div>
+                            <button class="promo-btn" onclick="togglePromo(1)">Lihat Detail</button>
+                            <div class="promo-details" id="promo-1">
+                                <hr>
+                                <h4>Detail Promo:</h4>
+                                <ul>
+                                    <li>Berlaku untuk semua jenis cappuccino dan latte art</li>
+                                    <li>Tidak dapat digabung dengan promo lain</li>
+                                    <li>Berlaku dine-in dan takeaway</li>
+                                    <li>Valid hingga 31 Desember 2024</li>
+                                </ul>
+                                <p><strong>Syarat & Ketentuan:</strong> Tunjukkan promo ini kepada barista saat memesan. Promo berlaku setiap hari Senin - Jumat pada jam 14:00 - 17:00.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Promo 2 -->
+                    <div class="promo-card">
+                        <div class="promo-header">
+                            <img src="https://images.pexels.com/photos/461431/pexels-photo-461431.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Weekend Special">
+                            <div class="promo-badge">WEEKEND</div>
+                        </div>
+                        <div class="promo-content">
+                            <h3>Weekend Brunch Special</h3>
+                            <p class="promo-summary">Paket brunch dengan 1 makanan + 1 minuman</p>
+                            <div class="promo-time">Sabtu - Minggu, 09:00 - 14:00</div>
+                            <button class="promo-btn" onclick="togglePromo(2)">Lihat Detail</button>
+                            <div class="promo-details" id="promo-2">
+                                <hr>
+                                <h4>Detail Promo:</h4>
+                                <ul>
+                                    <li>Pilih 1 makanan dari menu brunch</li>
+                                    <li>Pilih 1 minuman (kopi, tea, atau fresh juice)</li>
+                                    <li>Harga spesial Rp 65.000 (hemat Rp 15.000)</li>
+                                    <li>Berlaku untuk dine-in only</li>
+                                </ul>
+                                <p><strong>Menu Brunch Tersedia:</strong> Club Sandwich, Salmon Bagel, Fluffy Pancake, Aglio Olio Pasta.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Promo 3 -->
+                    <div class="promo-card">
+                        <div class="promo-header">
+                            <img src="https://images.pexels.com/photos/851555/pexels-photo-851555.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Student Discount">
+                            <div class="promo-badge">STUDENT</div>
+                        </div>
+                        <div class="promo-content">
+                            <h3>Student Discount</h3>
+                            <p class="promo-summary">Diskon 20% untuk seluruh menu</p>
+                            <div class="promo-time">Setiap hari dengan kartu pelajar</div>
+                            <button class="promo-btn" onclick="togglePromo(3)">Lihat Detail</button>
+                            <div class="promo-details" id="promo-3">
+                                <hr>
+                                <h4>Detail Promo:</h4>
+                                <ul>
+                                    <li>Berlaku untuk siswa SMA dan mahasiswa</li>
+                                    <li>Wajib menunjukkan kartu pelajar/mahasiswa yang valid</li>
+                                    <li>Diskon 20% untuk seluruh menu</li>
+                                    <li>Berlaku dine-in dan takeaway</li>
+                                </ul>
+                                <p><strong>Waktu Berlaku:</strong> Setiap hari selama jam operasional. Perfect untuk study session dengan teman!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Event 1 -->
+                    <div class="promo-card event-card">
+                        <div class="promo-header">
+                            <img src="https://images.pexels.com/photos/1307698/pexels-photo-1307698.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Live Music">
+                            <div class="promo-badge event">EVENT</div>
+                        </div>
+                        <div class="promo-content">
+                            <h3>Friday Night Live Music</h3>
+                            <p class="promo-summary">Live acoustic performance setiap Jumat malam</p>
+                            <div class="promo-time">Setiap Jumat, 19:00 - 22:00</div>
+                            <button class="promo-btn" onclick="togglePromo(4)">Lihat Detail</button>
+                            <div class="promo-details" id="promo-4">
+                                <hr>
+                                <h4>Detail Event:</h4>
+                                <ul>
+                                    <li>Live acoustic music dengan local artists</li>
+                                    <li>Genre: Folk, Pop, Indie</li>
+                                    <li>No cover charge - gratis untuk semua pengunjung</li>
+                                    <li>Booking meja direkomendasikan</li>
+                                </ul>
+                                <p><strong>Jadwal Artist:</strong> Setiap Jumat kami menghadirkan musisi lokal berbeda. Follow Instagram kami untuk update artist mingguan!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Event 2 -->
+                    <div class="promo-card event-card">
+                        <div class="promo-header">
+                            <img src="https://images.pexels.com/photos/2061611/pexels-photo-2061611.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Coffee Workshop">
+                            <div class="promo-badge event">WORKSHOP</div>
+                        </div>
+                        <div class="promo-content">
+                            <h3>Coffee Brewing Workshop</h3>
+                            <p class="promo-summary">Belajar teknik brewing coffee dari ahlinya</p>
+                            <div class="promo-time">Sabtu terakhir setiap bulan</div>
+                            <button class="promo-btn" onclick="togglePromo(5)">Lihat Detail</button>
+                            <div class="promo-details" id="promo-5">
+                                <hr>
+                                <h4>Detail Workshop:</h4>
+                                <ul>
+                                    <li>Durasi: 3 jam (09:00 - 12:00)</li>
+                                    <li>Materi: V60, French Press, Aeropress techniques</li>
+                                    <li>Include: Coffee tasting, take home coffee beans</li>
+                                    <li>Harga: Rp 150.000/person</li>
+                                </ul>
+                                <p><strong>Pendaftaran:</strong> Maksimal 8 peserta per session. Daftar melalui WhatsApp atau langsung datang ke cafe.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Promo 4 -->
+                    <div class="promo-card">
+                        <div class="promo-header">
+                            <img src="https://images.pexels.com/photos/291528/pexels-photo-291528.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Birthday Special">
+                            <div class="promo-badge">BIRTHDAY</div>
+                        </div>
+                        <div class="promo-content">
+                            <h3>Birthday Special</h3>
+                            <p class="promo-summary">Free dessert untuk yang berulang tahun</p>
+                            <div class="promo-time">Berlaku setiap hari</div>
+                            <button class="promo-btn" onclick="togglePromo(6)">Lihat Detail</button>
+                            <div class="promo-details" id="promo-6">
+                                <hr>
+                                <h4>Detail Promo:</h4>
+                                <ul>
+                                    <li>Free 1 dessert pilihan untuk yang berulang tahun</li>
+                                    <li>Tunjukkan KTP atau ID yang valid</li>
+                                    <li>Minimal pembelian 1 minuman</li>
+                                    <li>Berlaku untuk dine-in only</li>
+                                </ul>
+                                <p><strong>Pilihan Dessert:</strong> Cheesecake, Brownie, Tiramisu, atau Pancake. Perfect untuk celebrate special day!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Brew & Beans</h3>
+                    <p>Coffee shop terbaik dengan suasana hangat dan kopi berkualitas tinggi.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Kontak</h3>
+                    <p>📍 Jl. Raya Denpasar No. 123, Bali</p>
+                    <p>📞 (0361) 123-4567</p>
+                    <p>✉️ info@brewandbeans.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Jam Operasional</h3>
+                    <p>Senin - Jumat: 07:00 - 22:00</p>
+                    <p>Sabtu - Minggu: 08:00 - 23:00</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Brew & Beans Coffee Shop. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/promo.js"></script>
+</body>
+</html>
