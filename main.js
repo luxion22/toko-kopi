@@ -1,4 +1,4 @@
-// Tombol navigasi
+// Mobile Navigation Toggle
 document.addEventListener('DOMContentLoaded', function() {
     const hamburger = document.getElementById('hamburger');
     const navMenu = document.getElementById('nav-menu');
@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
         hamburger.addEventListener('click', function() {
             navMenu.classList.toggle('active');
             
-            // Garis hamburger
+            // Animate hamburger lines
             const spans = hamburger.querySelectorAll('span');
             if (navMenu.classList.contains('active')) {
                 spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
@@ -20,8 +20,8 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
-
-            // Mobile menu 
+    
+    // Close mobile menu when clicking on nav links
     const navLinks = document.querySelectorAll('.nav-link');
     navLinks.forEach(link => {
         link.addEventListener('click', () => {
@@ -36,8 +36,8 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
-
-        // Scroll effect
+    
+    // Header scroll effect
     const header = document.querySelector('.header');
     if (header) {
         window.addEventListener('scroll', function() {
@@ -50,8 +50,8 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
-
-    // Scrolling for anchor links
+    
+    // Smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -64,13 +64,13 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
-
+    
     // Fade in animation on scroll
     const observerOptions = {
         threshold: 0.1,
         rootMargin: '0px 0px -50px 0px'
     };
-
+    
     const observer = new IntersectionObserver(function(entries) {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
