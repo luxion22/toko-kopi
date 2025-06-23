@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
             closeModal();
         }
     });
-
+    
     // Add hover effects to gallery items
     const galleryItems = document.querySelectorAll('.gallery-item');
     galleryItems.forEach(item => {
